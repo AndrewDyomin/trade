@@ -2,13 +2,11 @@
 
 import styles from "./Online.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import { Scrollbar } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import Image from "next/image";
 import transparentLogo from "@/app/public/transparent-logo.png";
 import StraightIcon from "@mui/icons-material/Straight";
-// import "./styles.css";
 
 export const Online = () => {
   const items = [

@@ -1,0 +1,18 @@
+.section {
+  padding: 0 16px;
+  overflow: hidden;
+  position: relative;
+}
+
+.header {
+  margin: 0;
+  margin-top: 181px;
+  color: rgb(255, 255, 255);
+  font-family: var(--ibm-plex-sans);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: calc(28px * -0.04);
+  text-align: left;
+  text-transform: uppercase;
+}

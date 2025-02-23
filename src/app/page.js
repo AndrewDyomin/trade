@@ -5,6 +5,8 @@ import { MenuButton } from "./components/MenuButton/MenuButton";
 import { Hero } from "./components/Hero/Hero";
 import { Numbers } from "./components/Numbers/Numbers";
 import { Online } from "./components/Online/Online";
+import { About } from "./components/About/About";
+import { Prices } from "./components/Prices/Prices";
 
 export default function Home() {
   return (
@@ -17,6 +19,8 @@ export default function Home() {
         <Hero />
         <Numbers />
         <Online />
+        <About />
+        <Prices />
       </main>
       <footer className={styles.footer}></footer>
     </div>
