@@ -1,10 +1,10 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import logo from "@/app/public/logo.png";
-import MenuIcon from "@mui/icons-material/Menu";
 import { MenuButton } from "./components/MenuButton/MenuButton";
 import { Hero } from "./components/Hero/Hero";
 import { Numbers } from "./components/Numbers/Numbers";
+import { Online } from "./components/Online/Online";
 
 export default function Home() {
   return (
@@ -16,6 +16,7 @@ export default function Home() {
       <main className={styles.main}>
         <Hero />
         <Numbers />
+        <Online />
       </main>
       <footer className={styles.footer}></footer>
     </div>
