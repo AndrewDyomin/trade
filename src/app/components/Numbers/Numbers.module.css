@@ -1,0 +1,13 @@
+.tab {
+    width: 272px;
+    height: 82px;
+    position: absolute;
+    top: -24px;
+    left: -16px;
+}
+
+.wrapper {
+    padding: 24px 16px 48px 16px;
+    background-color: #fff;
+    position: relative;
+}

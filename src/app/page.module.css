@@ -1,0 +1,21 @@
+/* .page {
+  font-family: var(--font-inter);
+} */
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 52px;
+  padding: 0 16px;
+}
+
+/* .menuButton {
+  background: transparent;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  border: none;
+  align-content: center;
+  padding: 0;
+  margin-left: auto;
+} */
