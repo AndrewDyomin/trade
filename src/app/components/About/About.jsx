@@ -5,7 +5,7 @@ import rect from "@/app/public/rectangle.png";
 export const About = () => {
   return (
     <>
-      <div className={styles.wrapper}>
+      <div className={styles.wrapper} id="about">
         <div className={styles.tab}>
           <Image src={rect} width={272} alt="tab" />
         </div>

@@ -13,7 +13,7 @@ export const Faq = () => {
 
   return (
     <>
-      <div className={styles.wrapper}>
+      <div className={styles.wrapper} id="faq">
         <h2 className={styles.header}>часто задаваемые вопросы</h2>
         <div className={styles.questions}>
           <div className={first ? styles.active : styles.questionArea} onClick={() => {first ? setFirst(false) : setFirst(true)}}>

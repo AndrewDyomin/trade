@@ -11,7 +11,7 @@ export const Prices = () => {
   const [futures, setFutures] = useState(false);
 
   return (
-    <div className={styles.section}>
+    <div className={styles.section} id="prices">
       <h2 className={styles.header}>Тарифы</h2>
       <div className={styles.formatArea}>
         <button

@@ -8,6 +8,7 @@ import { Online } from "./components/Online/Online";
 import { About } from "./components/About/About";
 import { Prices } from "./components/Prices/Prices";
 import { Faq } from "./components/Faq/Faq";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -24,7 +25,27 @@ export default function Home() {
         <Prices />
         <Faq />
       </main>
-      <footer className={styles.footer}></footer>
+      <footer className={styles.footer}>
+        <div className={styles.navArea}>
+          <h3 className={styles.navTitle}>Быстрая<br/> навигация</h3>
+          <div className={styles.navigation}>
+            <Link href='#numbers' className={styles.navItem}>Цифры</Link>
+            <Link href='#online' className={styles.navItem}>Сделки онлайн</Link>
+            <Link href='#about' className={styles.navItem}>о компании</Link>
+            <Link href='#prices' className={styles.navItem}>тарифы</Link>
+            <Link href='#faq' className={styles.navItem}>FAQ</Link>
+          </div>
+        </div>
+        <div>
+          <Image 
+            src={logo}
+            width={165}
+            height={80}
+            alt='TradeBlade logo'
+          />
+          <p className={styles.trademark}>© 2022 TradeBlade. All rights reserved</p>
+        </div>
+      </footer>
     </div>
   );
 }

@@ -48,7 +48,7 @@ export const Online = () => {
   ];
 
   return (
-    <div className={styles.section}>
+    <div className={styles.section} id="online">
       <h2 className={styles.header}>Прошедшие сделки</h2>
       <div className={styles.isOnline}>
         <div className={styles.bullet}></div>
