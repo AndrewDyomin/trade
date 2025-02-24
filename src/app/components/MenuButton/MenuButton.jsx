@@ -65,19 +65,19 @@ export const MenuButton = () => {
         </div>
       )}
       <div className={styles.desktop}>
-        <Link href="#numbers" className={styles.navItem} onClick={closeMenu}>
+        <Link href="#numbers" className={styles.navItem}>
           Цифры
         </Link>
-        <Link href="#online" className={styles.navItem} onClick={closeMenu}>
+        <Link href="#online" className={styles.navItem}>
           Сделки онлайн
         </Link>
-        <Link href="#about" className={styles.navItem} onClick={closeMenu}>
+        <Link href="#about" className={styles.navItem}>
           О компании
         </Link>
-        <Link href="#prices" className={styles.navItem} onClick={closeMenu}>
+        <Link href="#prices" className={styles.navItem}>
           Тарифы
         </Link>
-        <Link href="#faq" className={styles.navItem} onClick={closeMenu}>
+        <Link href="#faq" className={styles.navItem}>
           FAQ
         </Link>
         <button className={styles.login}>Войти</button>
