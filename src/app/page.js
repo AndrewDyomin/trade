@@ -7,6 +7,7 @@ import { Numbers } from "./components/Numbers/Numbers";
 import { Online } from "./components/Online/Online";
 import { About } from "./components/About/About";
 import { Prices } from "./components/Prices/Prices";
+import { Faq } from "./components/Faq/Faq";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <Online />
         <About />
         <Prices />
+        <Faq />
       </main>
       <footer className={styles.footer}></footer>
     </div>
