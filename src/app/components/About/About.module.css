@@ -50,6 +50,22 @@
     align-items: center;
 }
 
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 4px 0 rgb(87, 225, 255, 0);
+    }
+    50% {
+        box-shadow: 0 0 8px 2px rgb(87, 225, 255, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 4px 0 rgb(87, 225, 255, 0);
+    }
+}
+
+.offerArea {
+    animation: glow 2s infinite ease-in-out;
+}
+
 .offer {
     margin: 0;
     max-width: 324px;

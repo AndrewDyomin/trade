@@ -41,6 +41,7 @@
     line-height: 1.3;
     letter-spacing: calc(18px * -0.04);
     text-transform: uppercase;
+    transition: background 0.3s, color 0.3s;
 }
 
 .button {
@@ -56,6 +57,24 @@
     letter-spacing: calc(18px * -0.04);
     text-transform: uppercase;
     cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background: rgba(87, 225, 255, 0.1);
+}
+
+.activeButton {
+  animation: activeButtonAnimation 0.5s ease-in-out;
+}
+
+@keyframes activeButtonAnimation {
+  0% {
+    transform: scale(0.95); 
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .standartArea {

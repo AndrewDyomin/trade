@@ -97,10 +97,6 @@
     animation: glow 2s infinite ease-in-out;
 }
 
-.form:hover {
-    box-shadow: 0 0 8px 2px rgb(87, 225, 255, 0.4)
-}
-
 .offer {
     color: rgb(255, 255, 255);
     font-family: var(--ibm-plex-sans);
