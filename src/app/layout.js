@@ -1,4 +1,5 @@
-import { Inter, Jura, IBM_Plex_Sans } from "next/font/google";
+import { IBM_Plex_Sans } from "next/font/google";
+import logo from "@/app/public/logo-black.png"
 import "./globals.css";
 
 const ibm = IBM_Plex_Sans({
@@ -11,6 +12,20 @@ const ibm = IBM_Plex_Sans({
 
 export const metadata = {
   title: "TradeBlade",
+  description: "Начни копировать сделки с успешной командой профессиональных трейдеров в автоматическом режиме",
+  openGraph: {
+    title: "TradeBlade",
+    description: "Начни копировать сделки с успешной командой профессиональных трейдеров в автоматическом режиме",
+    url: "https://trade-jet.vercel.app/",
+  },
+  images: [
+    {
+      url: {logo},
+      width: 180,
+      height: 100,
+      alt: "Logo"
+    }
+  ]
 };
 
 export default function RootLayout({ children }) {
