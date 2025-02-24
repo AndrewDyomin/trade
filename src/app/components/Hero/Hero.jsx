@@ -1,9 +1,18 @@
+import Image from "next/image"
 import styles from "./Hero.module.css"
+import heroImage from "@/app/public/hero-image.png"
 
 export const Hero = () => {
     return(
         <div className={styles.section}>
-            <div className={styles.imageArea}></div>
+            <div className={styles.imageArea}>
+                <Image 
+                    src={heroImage}
+                    width={300}
+                    height={134}
+                    alt="short to short"
+                />
+            </div>
             <div>
                 <h1 className={styles.title}>моментально Копируй сделки профи трейдеров</h1>
                 <p className={styles.description}>Начни копировать сделки с успешной командой профессиональных трейдеров в автоматическом режиме.</p>

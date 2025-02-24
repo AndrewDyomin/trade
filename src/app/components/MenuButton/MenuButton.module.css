@@ -1,10 +1,114 @@
 .menuButton {
-    background: transparent;
-    color: #fff;
-    width: 32px;
-    height: 32px;
-    border: none;
-    align-content: center;
-    padding: 0;
-    margin-left: auto;
+  background: transparent;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  border: none;
+  align-content: center;
+  padding: 0;
+  margin-left: auto;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
   }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: 9px 16px 16px 16px;
+  position: fixed; /* Меню не должно зависеть от родителя */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(106, 84, 255);
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.menu.open {
+  animation: slideIn 0.3s ease forwards;
+}
+
+.menu.close {
+  animation: slideOut 0.3s ease forwards;
+}
+
+.CloseBtn {
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.navItem {
+  color: rgb(255, 255, 255);
+  font-family: var(--ibm-plex-sans);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.3;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.authNav {
+  display: flex;
+  margin-top: auto;
+  gap: 16px;
+}
+
+.register {
+  width: 100%;
+  height: 52px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 4px 0px rgb(87, 225, 255);
+  background: rgb(87, 225, 255);
+  border: none;
+  color: rgb(3, 7, 24);
+  font-family: var(--ibm-plex-sans);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.login {
+  width: 100%;
+  height: 52px;
+  box-sizing: border-box;
+  border: 2px solid rgb(87, 225, 255);
+  border-radius: 3px;
+  box-shadow: 0px 0px 4px 0px rgb(87, 225, 255);
+  background: rgba(87, 225, 255, 0.2);
+  color: rgb(87, 225, 255);
+  font-family: var(--ibm-plex-sans);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
