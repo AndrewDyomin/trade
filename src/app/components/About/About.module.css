@@ -129,3 +129,48 @@
     text-transform: uppercase;
     cursor: pointer;  
 }
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        padding: 92px 16px 88px 16px;
+    }
+
+    .desktop {
+        display: flex;
+    }
+
+    .titleArea {
+        max-width: 410px;
+    }
+
+    .offerArea {
+        position: static;
+        max-width: 630px;
+        max-height: 244px;
+        padding: 32px 65px;
+        margin-left: auto;
+        box-sizing: border-box;
+    }
+
+    
+    .form {
+        flex-direction: row;
+        margin: auto 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .desktop {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .offer {
+        font-size: 28px;
+        max-width: 100%;
+    }
+
+    .button {
+        width: 165px;
+    }
+}

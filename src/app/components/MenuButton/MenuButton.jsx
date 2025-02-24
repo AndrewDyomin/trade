@@ -21,7 +21,7 @@ export const MenuButton = () => {
       setMenu(false);
       setClosing(false);
       document.body.style.overflow = "";
-    }, 300); 
+    }, 300);
   };
 
   return (
@@ -31,16 +31,32 @@ export const MenuButton = () => {
       </button>
 
       {(menu || closing) && (
-        <div className={`${styles.menu} ${closing ? styles.close : styles.open}`}>
+        <div
+          className={`${styles.menu} ${closing ? styles.close : styles.open}`}
+        >
           <button className={styles.CloseBtn} onClick={closeMenu}>
             <CloseIcon />
           </button>
           <div className={styles.navigation}>
-            <Link href="#numbers" className={styles.navItem} onClick={closeMenu}>Цифры</Link>
-            <Link href="#online" className={styles.navItem} onClick={closeMenu}>Сделки онлайн</Link>
-            <Link href="#about" className={styles.navItem} onClick={closeMenu}>О компании</Link>
-            <Link href="#prices" className={styles.navItem} onClick={closeMenu}>Тарифы</Link>
-            <Link href="#faq" className={styles.navItem} onClick={closeMenu}>FAQ</Link>
+            <Link
+              href="#numbers"
+              className={styles.navItem}
+              onClick={closeMenu}
+            >
+              Цифры
+            </Link>
+            <Link href="#online" className={styles.navItem} onClick={closeMenu}>
+              Сделки онлайн
+            </Link>
+            <Link href="#about" className={styles.navItem} onClick={closeMenu}>
+              О компании
+            </Link>
+            <Link href="#prices" className={styles.navItem} onClick={closeMenu}>
+              Тарифы
+            </Link>
+            <Link href="#faq" className={styles.navItem} onClick={closeMenu}>
+              FAQ
+            </Link>
           </div>
           <div className={styles.authNav}>
             <button className={styles.register}>Регистрация</button>
@@ -48,6 +64,25 @@ export const MenuButton = () => {
           </div>
         </div>
       )}
+      <div className={styles.desktop}>
+        <Link href="#numbers" className={styles.navItem} onClick={closeMenu}>
+          Цифры
+        </Link>
+        <Link href="#online" className={styles.navItem} onClick={closeMenu}>
+          Сделки онлайн
+        </Link>
+        <Link href="#about" className={styles.navItem} onClick={closeMenu}>
+          О компании
+        </Link>
+        <Link href="#prices" className={styles.navItem} onClick={closeMenu}>
+          Тарифы
+        </Link>
+        <Link href="#faq" className={styles.navItem} onClick={closeMenu}>
+          FAQ
+        </Link>
+        <button className={styles.login}>Войти</button>
+        <button className={styles.register}>Регистрация</button>
+      </div>
     </>
   );
 };

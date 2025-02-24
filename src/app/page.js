@@ -36,7 +36,7 @@ export default function Home() {
             <Link href='#faq' className={styles.navItem}>FAQ</Link>
           </div>
         </div>
-        <div>
+        <div className={styles.trademarkArea}>
           <Image 
             src={logo}
             width={165}

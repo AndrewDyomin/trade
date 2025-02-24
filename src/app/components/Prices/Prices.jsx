@@ -33,7 +33,8 @@ export const Prices = () => {
           фьючерс
         </button>
       </div>
-      <div className={styles.standartArea}>
+      <div className={styles.cards}>
+        <div className={styles.standartArea}>
         <h3 className={styles.planName}>Standart</h3>
         <ul className={styles.list}>
           <li className={styles.item}>
@@ -116,6 +117,7 @@ export const Prices = () => {
           <p className={styles.tryButtonAction}>Попробовать</p>
           <p className={styles.tryButtonCall}>5 дней бесплатно</p>
         </button>
+      </div>
       </div>
     </div>
   );

@@ -202,4 +202,37 @@
     margin-top: 20px;
     background: rgb(106, 84, 255);
     border-radius: 8px;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+    .section {
+        max-width: 658px;
+        margin: 0 auto;
+    }
+    .header {
+        margin-top: 96px;
+    }
+    .formatArea{
+        max-width: calc(50% - 10px);
+    }
+
+    .cards {
+        display: flex;
+        gap: 20px;
+    }
+
+    .standartArea {
+        display: flex;
+        flex-direction: column;
+        max-height: 556px;
+    }
+
+    .termArea {
+        margin-top: auto;
+    }
+
+    .vipArea {
+        margin-top: 0;
+    }
 }

@@ -67,3 +67,27 @@
     text-align: left;
     text-transform: uppercase;
 }
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        display: flex;
+        align-items: center;
+    }
+    .indicatorsArea{
+        margin-top: 0;
+        display: flex;
+        gap: 129px;
+        margin-left: auto;
+    }
+    .indicator {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        display: flex;
+        width: 1100px;
+        margin: 0 auto;
+    }
+}

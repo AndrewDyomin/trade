@@ -35,8 +35,11 @@ export const Numbers = () => {
       <div className={styles.tab}>
         <Image src={rect} width={272} alt="tab" />
       </div>
-      <h2 className={styles.header}>цифры</h2>
-      <p className={styles.date}>Сентябрь 2022</p>
+      <div className={styles.container}>
+        <div>
+       <h2 className={styles.header}>цифры</h2>
+      <p className={styles.date}>Сентябрь 2022</p> 
+      </div>
       <div className={styles.indicatorsArea}>
         <div>
           <p className={styles.indicator}>Торговой прибыли</p>
@@ -50,6 +53,7 @@ export const Numbers = () => {
           <p className={styles.indicator}>прибыль подписчиков</p>
           <p className={styles.value}>{subscribers}</p>
         </div>
+      </div>
       </div>
     </div>
   );

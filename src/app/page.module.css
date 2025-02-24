@@ -52,3 +52,39 @@
   line-height: 1.4;
   opacity: 0.5;
 }
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 45px 80px;
+    display: flex;
+  }
+
+  .navArea {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .navigation {
+    flex-direction: row;
+    margin-top: auto;
+  }
+  .trademarkArea {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    margin: 0 auto;
+    width: 1100px;
+  }
+
+  .footer {
+    margin: 0 auto;
+    width: 1100px;
+  }
+}

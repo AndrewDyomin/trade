@@ -160,3 +160,10 @@
     border-radius: 56px;
     background: rgb(96, 115, 162);
 }
+
+@media screen and (min-width: 1200px) {
+  .section {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+}
